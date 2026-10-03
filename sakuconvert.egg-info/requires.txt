@@ -1,0 +1,13 @@
+PySide6<7,>=6.8
+Pillow<12,>=11
+pillow-heif<1,>=0.18
+requests<3,>=2.32
+imageio-ffmpeg<1,>=0.6
+pypdf<7,>=6
+python-docx<2,>=1.2
+pdf2docx<0.6,>=0.5.8
+reportlab<5,>=4.3
+pytesseract<1,>=0.3.13
+
+[:platform_system == "Windows"]
+pywin32>=311

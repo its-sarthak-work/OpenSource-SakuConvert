@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sakuconvert"
+version = "0.7.2"
+description = "Local-first, open-source file converter for Windows."
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+license = { text = "MIT" }
+authors = [{ name = "SakuConvert contributors" }]
+dependencies = [
+    "PySide6>=6.8,<7",
+    "Pillow>=11,<12",
+    "pillow-heif>=0.18,<1",
+    "requests>=2.32,<3",
+    "imageio-ffmpeg>=0.6,<1",
+    "pypdf>=6,<7",
+    "python-docx>=1.2,<2",
+    "pdf2docx>=0.5.8,<0.6",
+    "reportlab>=4.3,<5",
+    "pytesseract>=0.3.13,<1",
+    "pywin32>=311; platform_system == 'Windows'",
+]
+
+[project.scripts]
+sakuconvert = "app.main:main"
+
+[tool.setuptools]
+packages = ["app", "app.ui", "app.core", "app.converters", "app.privacy", "app.geo", "app.background"]

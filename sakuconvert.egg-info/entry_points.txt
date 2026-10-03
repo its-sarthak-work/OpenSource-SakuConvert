@@ -1,0 +1,2 @@
+[console_scripts]
+sakuconvert = app.main:main

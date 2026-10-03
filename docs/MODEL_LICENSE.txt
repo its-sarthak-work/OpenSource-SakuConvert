@@ -1,0 +1,13 @@
+SakuConvert v0.3 background-removal model
+
+Model: BiRefNet
+Repository: ZhengPeng7/BiRefNet
+License: MIT (as identified by the official Hugging Face model repository)
+Weights: model.safetensors
+
+The final distribution should include the applicable upstream LICENSE/NOTICE text
+and pin the exact model revision used in the installer.
+
+Do not substitute BRIA RMBG-1.4 or RMBG-2.0 without reviewing their separate
+model licenses. Those BRIA model cards currently state that commercial use is
+subject to a commercial agreement.

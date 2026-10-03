@@ -1,0 +1,46 @@
+Metadata-Version: 2.4
+Name: sakuconvert
+Version: 0.7.2
+Summary: Local-first, open-source file converter for Windows.
+Author: SakuConvert contributors
+License: MIT
+Requires-Python: <3.13,>=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PySide6<7,>=6.8
+Requires-Dist: Pillow<12,>=11
+Requires-Dist: pillow-heif<1,>=0.18
+Requires-Dist: requests<3,>=2.32
+Requires-Dist: imageio-ffmpeg<1,>=0.6
+Requires-Dist: pypdf<7,>=6
+Requires-Dist: python-docx<2,>=1.2
+Requires-Dist: pdf2docx<0.6,>=0.5.8
+Requires-Dist: reportlab<5,>=4.3
+Requires-Dist: pytesseract<1,>=0.3.13
+Requires-Dist: pywin32>=311; platform_system == "Windows"
+Dynamic: license-file
+
+# SakuConvert v0.7.1
+
+SakuConvert is a local-first, open-source Windows file converter. Normal conversion is performed on the user's computer. Online background removal is an explicitly separate feature that requires user confirmation.
+
+## v0.7 document engine
+
+- High-fidelity PDF → DOCX reconstruction with `pdf2docx`
+- High-fidelity DOCX → PDF rendering with local LibreOffice
+- Unicode-aware document rendering; no intentional `₹` → `?` substitution
+- Output validation after document conversion
+- Isolated LibreOffice profile and bounded timeout to prevent hung conversions
+- Clear handling of scanned/image-only PDFs
+- Existing image, video, audio, OCR and background-removal features remain available
+
+### Install
+
+Create/use the project's Python 3.12 virtual environment and run:
+
+```powershell
+..\.venv\Scripts\python.exe -m pip install -e .
+..\.venv\Scripts\python.exe -m app.main
+```
+
+For high-fidelity Word → PDF, install LibreOffice locally. No cloud service is required.

@@ -1,0 +1,6 @@
+SakuConvert v0.8.1 UI build
+- Per-file x removal
+- No Remove Selected button
+- No Preview panel
+- Soft pink/white UI, no neon purple
+- Based on working v0.7.2 document/conversion engine
