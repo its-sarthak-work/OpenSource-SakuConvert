@@ -1,0 +1,12 @@
+SakuConvert v0.9.5 - Theme + Background Polish
+
+Changes:
+- Dimmed the generated pink gamer-room background so it does not overpower the UI.
+- Added Settings > Appearance > Light / Dark / System.
+- Theme selection is persisted with QSettings.
+- Dark mode uses a darker background variant while preserving the room ambience.
+- Light mode uses a softened background variant.
+- Existing queue, timers, output-folder validation, automatic output-folder opening,
+  privacy center, background-removal warning/credits, logo-first splash and window
+  controls are preserved from the v0.9.4 baseline.
+- The user-provided SakuConvert logo remains the bundled application/splash logo.

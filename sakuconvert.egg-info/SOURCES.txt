@@ -29,6 +29,7 @@ app/privacy/audit.py
 app/privacy/network.py
 app/ui/__init__.py
 app/ui/main_window.py
+app/ui/splash.py
 sakuconvert.egg-info/PKG-INFO
 sakuconvert.egg-info/SOURCES.txt
 sakuconvert.egg-info/dependency_links.txt
